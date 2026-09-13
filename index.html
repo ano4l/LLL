@@ -137,6 +137,70 @@
             color: #666;
         }
 
+        .about {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .testimonials {
+            margin-bottom: 3rem;
+        }
+
+        .testimonials h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .testimonial-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .cta-section {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
         footer {
             background: rgba(0, 0, 0, 0.2);
             color: white;
@@ -172,6 +236,8 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -201,6 +267,36 @@
                 <h3>📱 Responsive</h3>
                 <p>Perfect on any device, from phones to desktops and everything in between</p>
             </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Project LLL is a cutting-edge platform designed to empower creators and businesses. With a focus on simplicity, elegance, and performance, we provide tools that help you build better products faster.</p>
+            <p>Our mission is to democratize access to world-class technology, making it available to everyone regardless of technical background. We believe great design and powerful functionality should go hand in hand.</p>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2>What Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Project LLL transformed how we approach our workflow. It's intuitive, beautiful, and incredibly powerful."</p>
+                    <div class="testimonial-author">— Sarah Chen, Product Manager</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The support team is outstanding, and the platform just works. Highly recommended for anyone looking to scale."</p>
+                    <div class="testimonial-author">— Marcus Johnson, CEO</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I was skeptical at first, but after one week, I couldn't imagine working without it. Best investment ever."</p>
+                    <div class="testimonial-author">— Emily Rodriguez, Freelancer</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Get Started?</h2>
+            <p>Join thousands of satisfied users and take your productivity to the next level today.</p>
+            <button class="cta-button">Start Your Free Trial</button>
         </section>
     </main>
 
